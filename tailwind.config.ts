@@ -95,6 +95,50 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'neon-flicker': {
+					'0%, 19%, 21%, 23%, 25%, 54%, 56%, 100%': {
+						opacity: '1',
+						filter: 'brightness(1) drop-shadow(0 0 10px hsl(var(--jarvis-cyan)))'
+					},
+					'20%, 24%, 55%': {
+						opacity: '0.1',
+						filter: 'brightness(0.3) drop-shadow(0 0 5px hsl(var(--jarvis-cyan) / 0.3))'
+					}
+				},
+				'tech-pulse': {
+					'0%, 100%': {
+						opacity: '0.4',
+						transform: 'scale(1)',
+						boxShadow: '0 0 5px hsl(var(--jarvis-cyan) / 0.3)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.05)',
+						boxShadow: '0 0 25px hsl(var(--jarvis-cyan) / 0.8), 0 0 50px hsl(var(--jarvis-cyan) / 0.4)'
+					}
+				},
+				'electric-arc': {
+					'0%, 100%': {
+						opacity: '0.2',
+						filter: 'hue-rotate(0deg) brightness(1)'
+					},
+					'25%': {
+						opacity: '0.8',
+						filter: 'hue-rotate(10deg) brightness(1.3)'
+					},
+					'50%': {
+						opacity: '1',
+						filter: 'hue-rotate(-10deg) brightness(1.5)'
+					},
+					'75%': {
+						opacity: '0.6',
+						filter: 'hue-rotate(5deg) brightness(1.2)'
+					}
+				},
+				'cyber-blink': {
+					'0%, 90%, 100%': { opacity: '1' },
+					'5%, 15%, 25%': { opacity: '0.1' }
 				}
 			},
 			animation: {
@@ -103,7 +147,11 @@ export default {
 				'circuit-pulse': 'circuit-pulse 3s ease-in-out infinite',
 				'glow-pulse': 'glow-pulse 4s ease-in-out infinite',
 				'neon-breathe': 'neon-breathe 3s ease-in-out infinite',
-				'slide-up': 'slide-up 0.5s ease-out'
+				'slide-up': 'slide-up 0.5s ease-out',
+				'neon-flicker': 'neon-flicker 2.5s linear infinite',
+				'tech-pulse': 'tech-pulse 2s ease-in-out infinite',
+				'electric-arc': 'electric-arc 1.8s ease-in-out infinite',
+				'cyber-blink': 'cyber-blink 3s linear infinite'
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
