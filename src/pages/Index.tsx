@@ -44,16 +44,7 @@ const Index = () => {
       </div>
 
       {/* ElevenLabs Conversational AI Widget */}
-      <elevenlabs-convai 
-        agent-id="NDxnOzy0Su1Z9IlFAg7I"
-        style={{
-          position: 'fixed',
-          bottom: '20px',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          zIndex: 1000
-        }}
-      />
+      <elevenlabs-convai agent-id="NDxnOzy0Su1Z9IlFAg7I"></elevenlabs-convai>
     </main>
   );
 };
