@@ -49,7 +49,8 @@ const Index = () => {
         style={{
           position: 'fixed',
           bottom: '20px',
-          right: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
           zIndex: 1000
         }}
       />
